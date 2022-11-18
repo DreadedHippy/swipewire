@@ -1,0 +1,7 @@
+{
+  "name": "swipewire",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
