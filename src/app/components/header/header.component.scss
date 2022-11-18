@@ -15,7 +15,7 @@
 
 div.sub-pages{
   display: flex;
-  margin: auto 20%;
+  margin: auto 15%;
 
   h4{
     margin: auto 40px;
@@ -25,9 +25,13 @@ div.sub-pages{
     border-radius:4px;
     background-color: rgba($color: #000000, $alpha: 0.1);
     transition: 0.2s;
+    cursor: pointer;
   }
 
-  h4:hover
+  h4:hover{
+    background-color: rgba($color: #000000, $alpha: 0.3);
+    color:#ffffff
+  }
 
   #home-btn, #solutions-btn{
     margin-right: -35px;
