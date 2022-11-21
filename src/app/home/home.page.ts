@@ -14,12 +14,7 @@ export class HomePage {
 
   slideOpts = {
     slidesPerView: 1,
-    cubeEffect: {
-      shadow: true,
-      slideShadows: true,
-      shadowOffset: 20,
-      shadowScale: 0.94,
-    }
+    speed: 200
   };
 
 

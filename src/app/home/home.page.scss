@@ -33,7 +33,7 @@
 
 .shape-container{
   animation-name: glide;
-  animation-duration: 15s;
+  animation-duration: 50s;
   animation-iteration-count: infinite;
   animation-timing-function: ease;
   animation-direction: alternate;
@@ -41,7 +41,7 @@
 
 .shape-container2{
   animation-name: glide2;
-  animation-duration: 25s;
+  animation-duration: 60s;
   animation-iteration-count: infinite;
   animation-timing-function: ease;
   animation-direction: alternate;
@@ -67,7 +67,7 @@
 
 .mobile-card{
   margin: auto;
-  width: 90%;
+  width: 95%;
   text-align: center;
   padding: 8px;
 }
