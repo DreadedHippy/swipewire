@@ -9,31 +9,50 @@
     </div>
   </div>
 
-  <div id="container">
-    <strong>This is swipewire</strong>
-  </div>
-
-
-  <div class="slides" #slides>
-    <ion-button fill="clear" shape="round" (click)="moveSliderBack()">
-      <ion-icon name="chevron-back-outline"></ion-icon>
-    </ion-button>
-    <ion-slides pager="true" [options]="slideOpts" class="slider">
-      <ion-slide>
-        <ion-card class="card" id="carouser">
-          <ion-card-title>Awesome Title</ion-card-title>
-        </ion-card>
-      </ion-slide>
-      <ion-slide>
-        <h1>Slide 2</h1>
-      </ion-slide>
-      <ion-slide>
-        <h1>Slide 3</h1>
-      </ion-slide>
-    </ion-slides>
-    <ion-button fill="clear" shape="round" (click)="moveSliderForward(slides)">
-      <ion-icon name="chevron-forward-outline"></ion-icon>
-    </ion-button>
+  <div class="body">
+    <div class="slides" #slides>
+      <ion-button fill="clear" shape="round" (click)="moveSliderBack()">
+        <ion-icon name="chevron-back-outline"></ion-icon>
+      </ion-button>
+      <ion-slides pager="true" [options]="slideOpts" class="slider">
+        <ion-slide>
+          <ion-card class="card" id="carouser">
+            <img alt="placeholder-img" src="../../assets/icon/consultancy.jpg">
+            <ion-card-header>
+              <ion-card-subtitle>Lorem Ipsum</ion-card-subtitle>
+              <ion-card-title>Management And Consultancy</ion-card-title>
+            </ion-card-header>
+            <ion-card-content>
+              Here at swipewire, we aim to efficiently establish companies looking to
+              ground themselves in africa.
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+              sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+               ea commodo consequat. Duis aute irure dolor in reprehenderit in
+               voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+               Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+              officia deserunt mollit anim id est laborum."
+            </ion-card-content>
+          </ion-card>
+        </ion-slide>
+        <ion-slide>
+          <h1>Slide 2</h1>
+        </ion-slide>
+        <ion-slide>
+          <h1>Slide 3</h1>
+        </ion-slide>
+      </ion-slides>
+      <ion-button fill="clear" shape="round" (click)="moveSliderForward(slides)">
+        <ion-icon name="chevron-forward-outline"></ion-icon>
+      </ion-button>
+    </div>
   </div>
 
 </ion-content>
+
+
+<ion-footer [translucent]="true" mode="ios" class="footer">
+  <ion-toolbar color="dark">
+    <h3>Lorem Ipsum</h3>
+  </ion-toolbar>
+</ion-footer>
