@@ -46,3 +46,8 @@ div.sub-pages{
   font-family: 'Poppins', sans-serif;
 }
 
+ion-segment{
+  --background: rgba(var(--ion-color-light-rgb), 0.25);
+  border-radius: 10px;
+}
+
