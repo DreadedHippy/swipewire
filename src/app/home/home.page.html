@@ -16,7 +16,7 @@
       </ion-button>
       <ion-slides pager="true" [options]="slideOpts" class="slider">
         <ion-slide>
-          <ion-card class="card" id="carouser">
+          <ion-card [ngClass]="{'card' : !mobile, 'mobile-card': mobile}" id="carouser">
             <img alt="placeholder-img" src="../../assets/icon/consultancy.jpg">
             <ion-card-header>
               <ion-card-subtitle>Lorem Ipsum</ion-card-subtitle>
