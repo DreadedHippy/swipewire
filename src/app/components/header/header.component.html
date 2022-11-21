@@ -1,8 +1,19 @@
 <div class="header">
   <h1 id="logo-text">Swipewire</h1>
-  <div class="sub-pages">
+  <div class="sub-pages" [hidden]="mobile">
     <h4 id="home-btn">Home</h4>
     <h4 id="solutions-btn">Solutions</h4>
     <h4 id="faq-btn">FAQ</h4>
   </div>
+  <ion-segment value="home" color="dark" [hidden]="!mobile">
+    <ion-segment-button value="home">
+      <ion-label class="segment-label">Home</ion-label>
+    </ion-segment-button>
+    <ion-segment-button value="solutions">
+      <ion-label class="segment-label">Solutions</ion-label>
+    </ion-segment-button>
+    <ion-segment-button value="faq">
+      <ion-label class="segment-label">FAQ</ion-label>
+    </ion-segment-button>
+  </ion-segment>
 </div>

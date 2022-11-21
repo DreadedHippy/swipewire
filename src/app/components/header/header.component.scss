@@ -16,6 +16,7 @@
 div.sub-pages{
   display: flex;
   margin: auto 15%;
+  width: 50%;
 
   h4{
     margin: auto 40px;
@@ -38,5 +39,10 @@ div.sub-pages{
   }
 
 
+}
+
+.segment-label{
+  font-weight: bold;
+  font-family: 'Poppins', sans-serif;
 }
 

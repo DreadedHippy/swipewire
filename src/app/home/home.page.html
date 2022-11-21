@@ -11,7 +11,7 @@
 
   <div class="body">
     <div class="slides" #slides>
-      <ion-button fill="clear" shape="round" (click)="moveSliderBack()">
+      <ion-button fill="clear" shape="round" (click)="moveSliderBack()"  [hidden]="mobile">
         <ion-icon name="chevron-back-outline"></ion-icon>
       </ion-button>
       <ion-slides pager="true" [options]="slideOpts" class="slider">
