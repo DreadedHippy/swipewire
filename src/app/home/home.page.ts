@@ -1,4 +1,5 @@
 import { Component, ViewChild } from '@angular/core';
+import { Platform } from '@ionic/angular';
 
 @Component({
   selector: 'app-home',
@@ -7,17 +8,18 @@ import { Component, ViewChild } from '@angular/core';
 })
 export class HomePage {
 
-  constructor() {}
+  constructor(public platform: Platform) {}
+
+  mobile = this.platform.is('mobileweb')
 
   slideOpts = {
     slidesPerView: 1,
-    coverflowEffect: {
-      rotate: 50,
-      stretch: 0,
-      depth: 100,
-      modifier: 1,
+    cubeEffect: {
+      shadow: true,
       slideShadows: true,
-    },
+      shadowOffset: 20,
+      shadowScale: 0.94,
+    }
   };
 
 
