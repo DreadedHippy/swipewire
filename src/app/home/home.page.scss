@@ -47,9 +47,20 @@
   animation-direction: alternate;
 }
 
+
+@keyframes glide {
+  from{transform: translateX(0),}
+  to{transform: translateX(50%);}
+}
+
+@keyframes glide2 {
+  from{transform: translateX(50%),}
+  to{transform: translateX(0);}
+}
+
 .card{
   margin: auto;
-  width: 50%;
+  width: 80%;
   text-align: center;
   padding: 8px;
 }
