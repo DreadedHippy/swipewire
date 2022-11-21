@@ -1,13 +1,39 @@
 <ion-content [fullscreen]="true">
   <app-header></app-header>
+  <div class="main-header">
+    <div class="shape-container">
+      <div class="parallelogram"></div>
+    </div>
+    <div class="shape-container2">
+      <div class="parallelogram2"></div>
+    </div>
+  </div>
+
   <div id="container">
     <strong>This is swipewire</strong>
   </div>
-  <div class="shape-container">
-    <div class="parallelogram"></div>
+
+
+  <div class="slides" #slides>
+    <ion-button fill="clear" shape="round" (click)="moveSliderBack()">
+      <ion-icon name="chevron-back-outline"></ion-icon>
+    </ion-button>
+    <ion-slides pager="true" [options]="slideOpts" class="slider">
+      <ion-slide>
+        <ion-card class="card" id="carouser">
+          <ion-card-title>Awesome Title</ion-card-title>
+        </ion-card>
+      </ion-slide>
+      <ion-slide>
+        <h1>Slide 2</h1>
+      </ion-slide>
+      <ion-slide>
+        <h1>Slide 3</h1>
+      </ion-slide>
+    </ion-slides>
+    <ion-button fill="clear" shape="round" (click)="moveSliderForward(slides)">
+      <ion-icon name="chevron-forward-outline"></ion-icon>
+    </ion-button>
   </div>
 
-  <div class="shape-container2">
-    <div class="parallelogram2"></div>
-  </div>
 </ion-content>

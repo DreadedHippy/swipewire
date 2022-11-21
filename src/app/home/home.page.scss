@@ -48,25 +48,6 @@
 }
 
 
-.parallelogram {
-  width: 300px;
-  height: 200px;
-  transform: skew(-10.51deg);
-  background: rgba(255, 153, 0, 0.30);
-  margin-top: 100px;
-  margin-left: 200px;
-}
-
-.parallelogram2 {
-  width: 270px;
-  height: 180px;
-  transform: skew(-10.51deg);
-  background: rgba(255, 153, 0, 0.20);
-  margin-top: -25px;
-  margin-left: 200px;
-}
-
-
 @keyframes glide {
   from{transform: translateX(0),}
   to{transform: translateX(50%);}
@@ -75,4 +56,57 @@
 @keyframes glide2 {
   from{transform: translateX(50%),}
   to{transform: translateX(0);}
+}
+
+.card{
+  margin: auto;
+  width: 20%;
+  height: 40px;
+  text-align: center;
+  padding: 8px;
+}
+
+.main-header{
+  height: 45vh;
+  width: 150%;
+  margin-left: -12vh;
+  margin-top: -50px;
+
+  .parallelogram {
+    width: 500px;
+    height: 200px;
+    transform: skew(-10.51deg);
+    background: rgba(255, 153, 0, 0.30);
+    margin-top: 100px;
+    margin-left: 200px;
+  }
+
+  .parallelogram2 {
+    width: 450px;
+    height: 180px;
+    transform: skew(-10.51deg);
+    background: rgba(255, 153, 0, 0.20);
+    margin-top: -25px;
+    margin-left: 200px;
+  }
+}
+
+div.slides{
+  ion-button{
+    margin: auto 5px;
+    font-size: large;
+  }
+  display: flex;
+  width: 80%;
+  height: 500px;
+  padding: auto;
+  margin: -80px auto 0 auto;
+
+  .slider{
+    width: 90%;
+  }
+
+  .slider > *{
+    width: 100%
+  }
 }
